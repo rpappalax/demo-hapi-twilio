@@ -19,7 +19,8 @@ which you will need to export locally as environment variables.
 
 Download and install ngrok: https://ngrok.com/
 
-.. ::code bash
+.. code:: bash
+
 
   $ git clone https://github.com/rpappalax/demo-twilio-voice
   $ cd demo-twilio-voice
