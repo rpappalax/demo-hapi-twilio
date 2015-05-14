@@ -17,19 +17,18 @@ Your Twilio account will give you a:
 which you will need to export locally as environment variables.
 
 
-Download and install ngrok
-https://ngrok.com/
+Download and install ngrok: `<https://ngrok.com/>`_
 
 .. ::code bash
 
-$ git clone https://github.com/rpappalax/demo-twilio-voice
-$ cd demo-twilio-voice
+ $ git clone `<https://github.com/rpappalax/demo-twilio-voice>`_
+ $ cd demo-twilio-voice
 
-# in one terminal window:
-$ node ./app.js
+ # in one terminal window:
+ $ node ./app.js
 
-# in another terminal window:
-$ ngrok 3000
+ # in another terminal window:
+ $ ngrok 3000
 
 
 Follow the instructions in link below (see Reference).
