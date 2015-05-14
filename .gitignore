@@ -1,0 +1,4 @@
+.DS_Store
+*.sw[mnopqr]
+node_modules/
+ngrok
