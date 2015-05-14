@@ -17,11 +17,11 @@ Your Twilio account will give you a:
 which you will need to export locally as environment variables.
 
 
-Download and install ngrok: `<https://ngrok.com/>`_
+Download and install ngrok: https://ngrok.com/
 
 .. ::code bash
 
-  $ git clone `<https://github.com/rpappalax/demo-twilio-voice>`_
+  $ git clone https://github.com/rpappalax/demo-twilio-voice
   $ cd demo-twilio-voice
 
   # in one terminal window:
@@ -37,4 +37,4 @@ to Twilio so it will point back to the app on your local machine.
 
 Reference
 =======================
-`<http://blog.nodeknockout.com/post/66323669071/send-text-messages-and-make-phone-calls-with-node>`_
+http://blog.nodeknockout.com/post/66323669071/send-text-messages-and-make-phone-calls-with-node
