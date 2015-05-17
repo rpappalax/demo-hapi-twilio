@@ -1,17 +1,19 @@
-var http = require('http'),
-    fs = require('fs'),
-    express = require('express'),
-    bodyParser = require('body-parser'),
-    mysql = require('mysql'),
-    ejs = require('ejs');
+var Hapi = require('hapi');
+var Twilio = require('twilio');
 
-var app = express();
-app.use(bodyParser.urlencoded());
-
-greeting = "<Response><Say>I'm sorry I can't do that, Dave!</Say></Response>";
-app.post('/inbound', function(request, response) {
-    response.type('text/xml');
-    response.send('<Response><Say>Bonjour! Thanks for calling.</Say></Response>');
+var server = new Hapi.Server();
+server.connection({
+  port: process.env.PORT || 3000
 });
-
-app.listen(3000);
+server.route({
+  method: 'post',
+  path: '/inbound',
+  handler: function (request, reply) {
+    var resp = new Twilio.TwimlResponse();
+    resp.say('Bonjour! Thanks for calling.');
+    reply(resp.toString()).type('text/xml');
+  }
+});
+server.start(function () {
+  console.info('Server started at %s', server.info.uri);
+});
