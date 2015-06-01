@@ -1,4 +1,4 @@
-demo-twilio-voice
+demo-hapi-twilio
 =======================
 
 Description
@@ -8,12 +8,12 @@ Sample Twilio app that demonstrates voice feature.
 Installation
 -----------------------
 
-Create a Twilio account.
-This demo app will work with a starter 'sample' account.  To do anything more heavy-duty, you'll need to pay $$.
+Create a `Twilio <https://www.twilio.com/>`_ account.
+This demo app will work with a starter 'sample' account.  To do anything more heavy-duty, you'll need to pay `$$ <https://www.twilio.com/pricing/>`_.
 
 Your Twilio account will give you a:
- - TWILIO_ACCOUNT_SID and
- - TWILIO_AUTH_TOKEN
+ - ``TWILIO_ACCOUNT_SID`` and
+ - ``TWILIO_AUTH_TOKEN``
 which you will need to export locally as environment variables.
 
 
@@ -24,6 +24,7 @@ Download and install ngrok: https://ngrok.com/
 
   $ git clone https://github.com/rpappalax/demo-hapi-twilio
   $ cd demo-hapi-twilio
+  $ npm install
 
   # in one terminal window:
   $ npm start
