@@ -6,11 +6,20 @@ server.connection({
   port: process.env.PORT || 3000
 });
 server.route({
-  method: 'post',
+  method: 'POST',
   path: '/inbound',
   handler: function (request, reply) {
     var resp = new Twilio.TwimlResponse();
-    resp.say('Bonjour! Thanks for calling.');
+    resp.say('I\'m sorry I can\'t do that, Dave!');
+    reply(resp.toString()).type('text/xml');
+  }
+});
+server.route({
+  method: 'GET',
+  path: '/smsinbound',
+  handler: function (request, reply) {
+    var resp = new Twilio.TwimlResponse();
+    resp.message('Back atcha');
     reply(resp.toString()).type('text/xml');
   }
 });
