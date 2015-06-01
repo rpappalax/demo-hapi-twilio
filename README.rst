@@ -22,11 +22,11 @@ Download and install ngrok: https://ngrok.com/
 .. code:: bash
 
 
-  $ git clone https://github.com/rpappalax/demo-twilio-voice
-  $ cd demo-twilio-voice
+  $ git clone https://github.com/rpappalax/demo-hapi-twilio
+  $ cd demo-hapi-twilio
 
   # in one terminal window:
-  $ node ./app.js
+  $ npm start
 
   # in another terminal window:
   $ ngrok 3000
