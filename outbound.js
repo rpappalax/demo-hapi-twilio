@@ -5,14 +5,14 @@ var toNumber = '+16509994444', // the number for the phone in your pocket
     bodyMessage = 'Node Knockout! Woo!'; // The body of the text message
 
 client.sendMessage({
-    to:toNumber, // the number for the phone in your pocket
-    from: fromNumber, // your Twilio number
-    body: bodyMessage // The body of the text message
+    to: toNumber,
+    from: fromNumber,
+    body: bodyMessage
 }, function(error, message) {
     // This callback is executed when the request completes
     if (error) {
-        console.log(error);
         console.error('Dagnabit.  We couldn\'t send the message');
+        console.log(error);
     } else {
         console.log('Message sent! Message id: '+message.sid);
     }

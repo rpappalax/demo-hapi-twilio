@@ -1,19 +1,24 @@
 {
-  "name": "demo-twilio-voice2",
-  "version": "0.0.0",
-  "description": "demo-twilio-voice =======================",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "demo-hapi-twilio",
+  "description": "Sample Twilio app that demonstrates voice feature.",
+  "version": "1.0.0",
+  "author": "rpappalax",
+  "bugs": {
+    "url": "https://github.com/rpappalax/demo-hapi-twilio/issues"
   },
+  "dependencies": {
+    "hapi": "8.6.0",
+    "twilio": "2.2.1"
+  },
+  "homepage": "https://github.com/rpappalax/rpappalax/demo-hapi-twilio",
+  "license": "ISC",
+  "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rpappalax/demo-twilio-voice.git"
+    "url": "https://github.com/rpappalax/rpappalax/demo-hapi-twilio.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rpappalax/demo-twilio-voice/issues"
-  },
-  "homepage": "https://github.com/rpappalax/demo-twilio-voice"
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
