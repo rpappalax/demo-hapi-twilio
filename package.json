@@ -1,0 +1,19 @@
+{
+  "name": "demo-twilio-voice2",
+  "version": "0.0.0",
+  "description": "demo-twilio-voice =======================",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rpappalax/demo-twilio-voice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpappalax/demo-twilio-voice/issues"
+  },
+  "homepage": "https://github.com/rpappalax/demo-twilio-voice"
+}

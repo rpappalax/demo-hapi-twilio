@@ -1,16 +1,17 @@
-var client = require('twilio')('TWILIO_ACCOUNT_SID', 'TWILIO_AUTH_TOKEN');
+var client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
-var toNumber = '+16505757343', // the number for the phone in your pocket
-    fromNumber = '+6502650808', // your Twilio number
+var toNumber = '+16509994444', // the number for the phone in your pocket
+    fromNumber = '+16503332222', // your Twilio number
     bodyMessage = 'Node Knockout! Woo!'; // The body of the text message
 
 client.sendMessage({
-    to:'+16505757343', // the number for the phone in your pocket
-    from: '+6502650808', // your Twilio number
-    body:'Node Knockout! Woo!' // The body of the text message
+    to:toNumber, // the number for the phone in your pocket
+    from: fromNumber, // your Twilio number
+    body: bodyMessage // The body of the text message
 }, function(error, message) {
     // This callback is executed when the request completes
     if (error) {
+        console.log(error);
         console.error('Dagnabit.  We couldn\'t send the message');
     } else {
         console.log('Message sent! Message id: '+message.sid);
