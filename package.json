@@ -7,7 +7,7 @@
     "url": "https://github.com/rpappalax/demo-hapi-twilio/issues"
   },
   "dependencies": {
-    "hapi": "8.6.0",
+    "hapi": "17.5.1",
     "twilio": "2.2.1"
   },
   "homepage": "https://github.com/rpappalax/rpappalax/demo-hapi-twilio",
